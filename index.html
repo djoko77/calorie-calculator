@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Daily Calorie Calculator</title>
+        <meta name="description" content="Calorie Calculator">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+
+    <body>
+        <header>  
+        </header>
+        <main>
+            <div id="calculator-box">
+    
+                <h1>Calorie Calculator</h1>
+                <p>Enter the required details to calculate your daily caloric needs:</p>
+           
+                    <form class="input-calorie"> 
+                        <p class="radiotext">Gender</p>
+                        <label class='radio-choice'> <input type="radio" name="female-male" id="female"> Male </label>
+                        <label class="radio-choice"> <input type="radio" name="female-male" id="male"> Female </label>
+                        <br>
+                        <label class="input-data">Height</label>
+                        <input type="number" placeholder="feet" class="form" id="height-feet">
+                        <input type="number" placeholder="inches" class="form" id="height-inches">
+                        <br>
+                        <label class="input-data">Weight</label>
+                        <input type="number" placeholder="lbs" class="form" id="weight">
+                        <br>
+                        <label class="input-data">Age</label>
+                        <input type="number" placeholder="years" class="form" id="weight">
+                        <br>
+                        <label class="input-data">Activity</label>
+                        <select class="activity" name="Activity level" id="activity">
+                            <option value="1.2"> Little to no exercise </option>
+                            <option value="1.375"> Exercise 1-3 times a week </option>
+                            <option value="1.55"> Exercise 3-5 times a week</option>
+                            <option value="1.725"> Exercise 6-7 times a week </option>
+                            <option value="1.9"> Exercise twice a day</option>
+                        </select>
+                        <br>
+                        <button type="button" class="submit" onclick=bmrCals() onclick=tdeeCals() value="Calculate">Calculate Now</button>
+                   </form>
+                </div>
+                <div class="result-box">
+                    <p class='result'>Maintain Weight<span id="maintain-weight"></span></p> 
+                    <p class='result'>Weight Loss<span id="weight-loss"></span></p>
+                    <p class='result'>Extreme Fat Loss<span id="extreme-weight-loss"></span></p>
+                </div>
+        </main>
+        <footer>
+            <p>&copy;2022 Fitness One - Daily Calorie Calculator</p>
+    </footer>
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>
