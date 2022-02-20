@@ -13,27 +13,30 @@
         <header>  
         </header>
         <main>
-            <div id="calculator-box">
-    
+            <div class="calculator-box">
                 <h1>Calorie Calculator</h1>
                 <p>Enter the required details to calculate your daily caloric needs:</p>
            
                     <form class="input-calorie"> 
                         <p class="radiotext">Gender</p>
-                        <label class='radio-choice'> <input type="radio" name="female-male" id="female"> Male </label>
-                        <label class="radio-choice"> <input type="radio" name="female-male" id="male"> Female </label>
+                        <label class='radio-choice'><input type="radio" name="female-male" id="male">Male</label>
+                        <label class="radio-choice"><input type="radio" name="female-male" id="female">Female</label>
                         <br>
                         <label class="input-data">Height</label>
+                        <br>
                         <input type="number" placeholder="feet" class="form" id="height-feet">
                         <input type="number" placeholder="inches" class="form" id="height-inches">
                         <br>
                         <label class="input-data">Weight</label>
+                        <br>
                         <input type="number" placeholder="lbs" class="form" id="weight">
                         <br>
                         <label class="input-data">Age</label>
+                        <br>
                         <input type="number" placeholder="years" class="form" id="weight">
                         <br>
                         <label class="input-data">Activity</label>
+                        <br>
                         <select class="activity" name="Activity level" id="activity">
                             <option value="1.2"> Little to no exercise </option>
                             <option value="1.375"> Exercise 1-3 times a week </option>
@@ -44,16 +47,17 @@
                         <br>
                         <button type="button" class="submit" onclick=bmrCals() onclick=tdeeCals() value="Calculate">Calculate Now</button>
                    </form>
-                </div>
+               
                 <div class="result-box">
                     <p class='result'>Maintain Weight<span id="maintain-weight"></span></p> 
                     <p class='result'>Weight Loss<span id="weight-loss"></span></p>
                     <p class='result'>Extreme Fat Loss<span id="extreme-weight-loss"></span></p>
                 </div>
+            </div>
         </main>
         <footer>
             <p>&copy;2022 Fitness One - Daily Calorie Calculator</p>
-    </footer>
+        </footer>
         <script src="./js/main.js"></script>
     </body>
 
