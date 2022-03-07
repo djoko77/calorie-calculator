@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>Daily Calorie Calculator</title>
         <meta name="description" content="Calorie Calculator">
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./styles/main.css">
     </head>
 
     <body>
@@ -26,16 +26,16 @@
                         <br>
                         <label class="input-data">Height</label>
                         <br>
-                        <input type="number" placeholder="feet" class="form" id="height-feet">
-                        <input type="number" placeholder="inches" class="form" id="height-inches">
+                        <input type="number" placeholder="feet" class="form" id="height-feet" required>
+                        <input type="number" placeholder="inches" class="form" id="height-inches" required>
                         <br>
                         <label class="input-data">Weight</label>
                         <br>
-                        <input type="number" placeholder="lbs" class="form" id="weight">
+                        <input type="number" placeholder="lbs" class="form" id="weight" required>
                         <br>
                         <label class="input-data">Age</label>
                         <br>
-                        <input type="number" placeholder="years" class="form" id="age">
+                        <input type="number" placeholder="years" class="form" id="age" required>
                         <br>
                         <label class="input-data">Activity</label>
                         <br>
@@ -48,6 +48,7 @@
                         </select>
                         <br>
                         <button type="button" class="submit" value="Calculate" id="calculate">Calculate Now</button>
+                        <p id="message"></p>
                    </form>
                
                 <div class="result-box">
