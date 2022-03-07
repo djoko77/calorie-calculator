@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>Daily Calorie Calculator</title>
         <meta name="description" content="Calorie Calculator">
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./styles/main.css">
     </head>
 
     <body>
@@ -19,8 +19,10 @@
            
                     <form class="input-calorie"> 
                         <p class="radiotext">Gender</p>
-                        <label class='radio-choice'><input type="radio" name="female-male" id="male">Male</label>
-                        <label class="radio-choice"><input type="radio" name="female-male" id="female">Female</label>
+                   
+                        <label class='radio-choice'><input type="radio" name="female-male" value="male" checked="checked">Male</label>
+                        <label class="radio-choice"><input type="radio" name="female-male" value="female">Female</label>
+         
                         <br>
                         <label class="input-data">Height</label>
                         <br>
@@ -33,11 +35,11 @@
                         <br>
                         <label class="input-data">Age</label>
                         <br>
-                        <input type="number" placeholder="years" class="form" id="weight">
+                        <input type="number" placeholder="years" class="form" id="age">
                         <br>
                         <label class="input-data">Activity</label>
                         <br>
-                        <select class="activity" name="Activity level" id="activity">
+                        <select class="activity" name="activity level" id="activityLevel">
                             <option value="1.2"> Little to no exercise </option>
                             <option value="1.375"> Exercise 1-3 times a week </option>
                             <option value="1.55"> Exercise 3-5 times a week</option>
@@ -45,14 +47,24 @@
                             <option value="1.9"> Exercise twice a day</option>
                         </select>
                         <br>
-                        <button type="button" class="submit" onclick=bmrCals() onclick=tdeeCals() value="Calculate">Calculate Now</button>
+                        <button type="button" class="submit" value="Calculate" id="calculate">Calculate Now</button>
                    </form>
                
                 <div class="result-box">
-                    <p class='result'>Maintain Weight<span id="maintain-weight"></span></p> 
-                    <p class='result'>Weight Loss<span id="weight-loss"></span></p>
-                    <p class='result'>Extreme Fat Loss<span id="extreme-weight-loss"></span></p>
+                    <div class='result'>Maintain Weight
+                        <div class="calorie" id="maintain-weight"></div>
+                            <p class="calories-day result-label">calories/day</p>
+                        </div>
+                    <div class='result'>Weight Loss (0.5 lb/week)
+                        <div class="calorie" id="weight-loss"></div>
+                        <p class="calories-day result-label">calories/day</p>
+                    </div>
+                    <div class='result'>Weight Gain (0.5 lb/week)
+                        <div class="calorie" id="weight-gain"></div>
+                        <p class="calories-day result-label">calories/day</p>
+                    </div>
                 </div>
+                <p>Lorem ipsum</p>
             </div>
         </main>
         <footer>
