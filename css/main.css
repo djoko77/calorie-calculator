@@ -21,6 +21,26 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+li {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    margin: 5px;
+}
+
+ul {
+    padding: 0 10px;
+}
+
+
 p {
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -262,6 +282,21 @@ input:valid {
 
     .result-label {
         margin-top: 90px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    
+    li {
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    ul {
+        padding: 0 40px;
     }
 
 } 
