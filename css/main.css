@@ -70,9 +70,8 @@ input {
 }
 
 ::placeholder {
-    font-size: 18px;
+    font-size: 16px;
     text-align: right;
-    font-weight: bold;
   }
 
 .input-data {
@@ -83,7 +82,7 @@ input {
     margin-bottom: 20px;
     padding: 5px;
     color: #004b18;
-    width: 40vw;
+    width: 65vw;
     font-size: 16px;
     cursor: pointer;
 }
